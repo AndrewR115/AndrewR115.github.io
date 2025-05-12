@@ -104,6 +104,33 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.floating-left-box {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    z-index: 1000;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    width: 200px;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 1200px; /* adjust this to match where you want it */
+    left: 60px;  /* adjust this as needed */
+    max-width: 500px;
+    height: auto;
+    z-index: 2;
+}
+
+.container {
+    position: relative;
+}
+
+
 hr {
   margin: 1rem 0;
   color: inherit;
